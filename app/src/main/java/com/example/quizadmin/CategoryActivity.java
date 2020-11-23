@@ -99,6 +99,8 @@ public class CategoryActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(linearLayoutManager);
         loadData();
 
+        //test comment
+
     }
     private void loadData() {
        loadingDialog.show();
