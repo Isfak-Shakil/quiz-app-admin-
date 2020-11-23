@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuestionDetailsActivity">
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:padding="@dimen/_10sdp"
+        android:background="@drawable/shape_rec01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:background="@null"
+            android:src="@drawable/ic_back_white"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"/>
+        <TextView
+            android:id="@+id/titleQuestion"
+            android:textStyle="bold"
+            android:textSize="@dimen/_20sdp"
+            android:textColor="@color/colorWhite"
+            android:layout_centerHorizontal="true"
+            android:text="Question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_below="@id/toolbar"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/question"
+                android:textColor="@color/colorBlack"
+                android:hint="Question"
+                android:background="@drawable/edit_text_back"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:textCursorDrawable="@null"
+                android:lines="5"
+                android:maxLines="7"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:targetApi="lollipop" />
+        <EditText
+                android:id="@+id/optionA"
+                android:textColor="@color/colorBlack"
+                 android:padding="@dimen/_8sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:hint="Option A"
+                android:inputType="textMultiLine"
+                android:background="@drawable/edit_back"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:textCursorDrawable="@null"
+                android:ems="10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:targetApi="lollipop" />
+        <EditText
+            android:id="@+id/optionB"
+            android:textColor="@color/colorBlack"
+            android:layout_margin="@dimen/_10sdp"
+            android:padding="@dimen/_8sdp"
+            android:hint="Option B"
+            android:background="@drawable/edit_back"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:textCursorDrawable="@null"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:targetApi="lollipop" />
+        <EditText
+            android:id="@+id/optionC"
+            android:textColor="@color/colorBlack"
+            android:layout_margin="@dimen/_10sdp"
+            android:padding="@dimen/_8sdp"
+            android:hint="Option C"
+            android:background="@drawable/edit_back"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:textCursorDrawable="@null"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:targetApi="lollipop" />
+        <EditText
+            android:id="@+id/optionD"
+            android:textColor="@color/colorBlack"
+            android:hint="Option D"
+            android:padding="@dimen/_8sdp"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@drawable/edit_back"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:textCursorDrawable="@null"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:targetApi="lollipop" />
+        <EditText
+            android:id="@+id/answer"
+            android:textColor="@color/colorBlack"
+            android:hint="Answer"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@drawable/edit_text_back"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:textCursorDrawable="@null"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:padding="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:targetApi="lollipop" />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:textColor="@color/colorWhite"
+        android:textAllCaps="false"
+        android:padding="@dimen/_16sdp"
+        android:textSize="@dimen/_20sdp"
+        android:text="Add question"
+        android:background="@drawable/round_corner"
+        android:layout_below="@id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

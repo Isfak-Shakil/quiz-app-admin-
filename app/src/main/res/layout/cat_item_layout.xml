@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_margin="@dimen/_10sdp"
+       android:background="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp">
+
+        <TextView
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/_20sdp"
+            android:textColor="@color/colorWhite"
+            android:text="Gk" />
+
+        <ImageButton
+            android:id="@+id/deleteBtn"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_delete_red" />
+    </RelativeLayout>
+</LinearLayout>

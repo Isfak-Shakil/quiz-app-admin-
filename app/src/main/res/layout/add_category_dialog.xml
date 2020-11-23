@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <EditText
+        android:id="@+id/catDialogName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_margin="@dimen/_40sdp"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="CategoryName:"
+        android:textColor="@color/colorBlack"
+        android:textCursorDrawable="@null" />
+
+    <Button
+        android:id="@+id/catDialogDoneButton"
+        android:textSize="@dimen/_18sdp"
+        android:layout_below="@id/catDialogName"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:text="Done"
+        android:maxWidth="@dimen/_150sdp"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@drawable/round_corner"
+        android:layout_centerInParent="true"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="wrap_content"
+        />
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/background02"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:scaleType="fitCenter"
+        android:src="@drawable/icon"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_150sdp"/>
+<EditText
+    android:id="@+id/emailEt"
+    android:textStyle="bold"
+    android:textColor="@color/colorBlack"
+    android:hint="Email:"
+    android:layout_marginTop="@dimen/_40sdp"
+    android:layout_below="@id/icon"
+    android:backgroundTint="@color/colorPrimary"
+    android:inputType="textEmailAddress"
+    android:ems="10"
+    android:textCursorDrawable="@null"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+    <EditText
+    android:id="@+id/passwordEt"
+    android:textStyle="bold"
+    android:textColor="@color/colorBlack"
+    android:hint="Password:"
+    android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_40sdp"
+    android:layout_below="@id/emailEt"
+    android:backgroundTint="@color/colorPrimary"
+    android:inputType="textPassword"
+    android:ems="10"
+        android:textCursorDrawable="@null"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/button"
+        android:textSize="@dimen/_18sdp"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:text="Start"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@drawable/round_corner"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+</RelativeLayout>

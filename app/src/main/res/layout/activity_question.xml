@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuestionActivity">
+    <RelativeLayout
+        android:id="@+id/qToolbarId"
+        android:padding="@dimen/_10sdp"
+        android:background="@drawable/shape_rec01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:background="@null"
+            android:src="@drawable/ic_back_white"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"/>
+        <TextView
+            android:id="@+id/qToolbarTextId"
+            android:textStyle="bold"
+            android:textSize="@dimen/_20sdp"
+            android:textColor="@color/colorWhite"
+            android:layout_centerHorizontal="true"
+            android:text="Questios"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/qRecyclerViewId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/qToolbarId"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/qAddBtnId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="63dp"
+        android:background="@drawable/round_corner"
+        android:text="Add Question"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite" />
+
+</RelativeLayout>
